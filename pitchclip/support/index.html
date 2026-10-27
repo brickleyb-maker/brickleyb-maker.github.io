@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>PitchClip Support</title>
+<style>
+  :root { --bg:#ffffff; --text:#16191d; --muted:#4a525c; --card:#f4f6f8; --line:#e1e5ea; --accent:#0b6e4f; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0e1114; --text:#eef1f4; --muted:#b3bbc4; --card:#181c21; --line:#2a3038; --accent:#5fd3a6; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+    font:17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust:100%; }
+  main { max-width:720px; margin:0 auto; padding:32px 16px 48px; }
+  .brand { display:flex; align-items:center; gap:12px; margin:0 0 20px; }
+  .brand img { width:56px; height:56px; border-radius:13px; }
+  h1 { font-size:1.9rem; line-height:1.2; margin:0; }
+  .lead { font-size:1.1rem; font-weight:600; margin:0 0 24px; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 18px; margin:0 0 14px; }
+  h2 { font-size:1.1rem; margin:0 0 8px; }
+  p, li { color:var(--muted); overflow-wrap:anywhere; }
+  p { margin:0 0 10px; } section p:last-child { margin-bottom:0; }
+  ul { margin:0; padding-left:20px; }
+  a { color:var(--accent); }
+  nav { margin-top:24px; font-size:0.95rem; } nav a { margin-right:16px; }
+  footer { color:var(--muted); font-size:0.85rem; margin-top:24px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand"><img src="../logo.png" alt=""><h1>PitchClip Support</h1></div>
+  <p class="lead">Questions, problems or ideas? Email <a href="mailto:brickleyb@gmail.com">brickleyb@gmail.com</a>. A real person reads every message.</p>
+  <section>
+    <h2>Report a problem</h2>
+    <p>The fastest way: in PitchClip, open Settings, then Help, privacy and feedback, and send feedback. It fills in your app version, iPhone model and iOS version for you.</p>
+    <p>If something went wrong during a game, Settings also has a bug report you can share by email or AirDrop. It contains game details and recent logs, never video. It goes only to whoever you choose.</p>
+  </section>
+  <section>
+    <h2>Getting started</h2>
+    <ul>
+      <li>Clip the phone to the backstop fence behind home plate, facing the pitcher.</li>
+      <li>Tap Record game. Every pitch saves as its own clip.</li>
+      <li>Set up the lineup by typing it, or by reading a screenshot or a photo of the lineup card.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Pitch counts</h2>
+    <p>PitchClip counts pitches to help you follow Pitch Smart guidelines. Check the count yourself during the game, and follow your league's rules and your coach. PitchClip is a helper, not an official scorer.</p>
+  </section>
+  <nav><a href="../">PitchClip</a><a href="../privacy/">Privacy Policy</a></nav>
+  <footer>PitchClip for iPhone, made by Brandon Brickley.</footer>
+</main>
+</body>
+</html>
