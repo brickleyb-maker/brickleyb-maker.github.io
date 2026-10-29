@@ -35,15 +35,16 @@
 <body>
 <main>
   <h1>PitchClip Privacy Policy</h1>
-  <p class="date">Effective October 26, 2026</p>
-  <p class="intro">PitchClip does not collect your data. There is no account, no server, no ads, no analytics and no tracking. What you record and type stays on your iPhone. The developer receives nothing from the app unless you choose to send feedback or a bug report.</p>
+  <p class="date">Effective October 29, 2026</p>
+  <p class="intro">PitchClip has no account, no ads, no analytics and no tracking. What you record and type stays on your iPhone. The one exception is Coach: when you tap Coach on a clip, a short piece of that video and a few details go to PitchClip's server to write a coaching card (see Coach below). Otherwise the developer receives nothing from the app unless you choose to send feedback or a bug report.</p>
 
     <section>
       <h2>What stays on this phone</h2>
-      <p>PitchClip keeps what it makes on this iPhone: the video of each pitch with game sound; each clip's details (game and opponent names, jersey numbers, any player names you type, pitch speeds and tags); lineups and your team list (My team); pitch counts and rest dates; the player photo you pick; your settings; the names of nearby phones in Live view; and a diagnostic log.</p>
-      <p>Clip videos, clip details and the diagnostic log are in PitchClip's folder, which you can also open in the Files app (On My iPhone, PitchClip). The log lists game and opponent names, jersey numbers and the names of nearby phones, never video. The pitch list, Recently deleted clips and the player photo are in PitchClip's private storage, which the Files app does not show. Exported clips and thumbnails sit in temporary storage that iOS can clear.</p>
+      <p>PitchClip keeps what it makes on this iPhone: the video of each pitch with game sound; each clip's details (game and opponent names, jersey numbers, any player names you type, pitch speeds and tags); lineups and your team list (My team); pitch counts and rest dates; the player photo you pick; Coach cards; your settings; the names of nearby phones in Live view; and a diagnostic log.</p>
+      <p>Clip videos, clip details and the diagnostic log are in PitchClip's folder, which you can also open in the Files app (On My iPhone, PitchClip). The log lists game and opponent names, jersey numbers and the names of nearby phones, never video. The pitch list, Recently deleted clips, the player photo and Coach cards are in PitchClip's private storage, which the Files app does not show. Exported clips and thumbnails sit in temporary storage that iOS can clear.</p>
       <p>If you turn on Record the whole game (for testing accuracy) in Help, For the developer, PitchClip also keeps all the video and sound of that one game in PitchClip's folder (FullGame), with a list of the clips it saved. It is off unless you turn it on, turns off when the game ends, is left out of backups, and stays until you delete it in Storage.</p>
-      <p>The app never sends any of this to the developer or to a server.</p>
+      <p>Parent contacts you save for a player (a phone number or email, picked from Contacts or typed) stay on this iPhone in PitchClip's private storage, and are shared only when you export them (Settings, Export contacts).</p>
+      <p>The app never sends any of this to the developer or to a server, except what Coach sends when you tap it (see Coach).</p>
     </section>
 
     <section>
@@ -59,14 +60,25 @@
 
     <section>
       <h2>Live view</h2>
-      <p>Live view lets other phones running PitchClip near you follow the game. It is on by default. While "Share this phone's game with nearby phones" is on (Settings, Live view), a nearby PitchClip phone can connect and see this phone's name, the game name, the inning, pitch counts, the lineup with any names you typed, speeds, tags and clips. A clip that a watching phone opens is copied to that phone and stays there.</p>
-      <p>Who can watch is "Open to anyone with PitchClip" unless you choose "Ask me for each phone", which asks you to allow each new phone. "Let other phones control the game", also on by default, lets connected phones change things like the inning, the batter or the pitch count.</p>
-      <p>The connection is encrypted and goes directly between the phones over Bluetooth or Wi-Fi, never through the internet or a server. Turn sharing off to keep a game private.</p>
+      <p>Live view lets other phones running PitchClip near you follow the game. It is on by default. While "Share this phone's game with nearby phones" is on (Settings, Live view), a phone that joins can see this phone's name, the game name, the inning, pitch counts, the lineup with any names you typed, speeds, tags and clips. A clip that a watching phone opens is copied to that phone and stays there.</p>
+      <p>Each team has a 4 digit team code. When this phone records a game for one of your teams, only phones that know that team's code can join: a parent types it once, and then joins that team's games by itself. The code itself is never shown to nearby phones; they see only the team's name and the game's name. The recording phone shows who is watching now and can remove any phone from the game. "Ask before a phone joins" also asks you to allow each new phone. A phone recording without a team (for example a quick practice) can be joined by any nearby PitchClip phone, as before.</p>
+      <p>A phone that joins with the code keeps a copy of the team (the team's name, code and season, player names and numbers, and the names of the phones that joined) and gets name and number fixes when it joins later games. Your own player choice, parent contacts and notes stay on your phone and are never sent. "Let other phones control the game", also on by default, lets the phone in control change things like the inning or the batter; only the team's coaches and recording phones can change the pitch count.</p>
+      <p>The connection is encrypted and goes directly between the phones over peer-to-peer Wi-Fi or the Wi-Fi network you are on (not Bluetooth), never through the internet or a server. Turn sharing off to keep a game private.</p>
     </section>
 
     <section>
       <h2>Sharing and saving</h2>
       <p>A clip, highlight video or speed card leaves PitchClip only when you share it or save it to Photos. After that it is handled by the app or person you sent it to, under their privacy terms. Move to Photos saves the original to your photo library and then removes the video from PitchClip. The pitch details and a still frame stay in PitchClip.</p>
+    </section>
+
+    <section>
+      <h2>Coach</h2>
+      <p>Coach writes a short coaching card about one pitch. It runs only when you tap Coach on a clip (for now, Coach is in Settings). The first time, it shows a consent note that names Anthropic. It reviews only your own player: pitching for your pitcher, batting for your batter.</p>
+      <p>What is sent: a piece of video about 2.5 seconds long around one pitch, with no sound (a full-width band with the top and bottom trimmed, or the whole picture at 1080p; usually about 10 MB, at most 15 MB); your player's jersey number and age; the pitch's measured speed and timing, and the mound distance; the app version; and a random id made for this install of PitchClip, which is not tied to you and is used for a daily limit per phone. No names are ever sent. For an at-bat or outing summary, only the cards' text, your taps and pitch counts are sent, with no video.</p>
+      <p>The video piece can show other people in the shot, such as the catcher, the umpire, or the other team's pitcher or batter.</p>
+      <p>Where it goes and who sees it: PitchClip's own server on Google Cloud (Cloud Run, in Dallas, Texas, USA). The server uses Anthropic's Claude to write the card. Under Anthropic's commercial terms, what Claude is sent is not used to train models and is deleted after a short retention period. It is not sent anywhere else.</p>
+      <p>How long it is kept: the server deletes the video piece as soon as the review finishes. It keeps one log line per review in Google Cloud's logs: the random phone id, pitching or batting, the result, cost, timing and framing. The log holds no video and no names. The card comes back to this iPhone and is saved only here, with the clip. A notification can tell you a card is ready.</p>
+      <p>To keep everything on your phone, don't use Coach. Nothing is sent unless you tap it.</p>
     </section>
 
     <section>
@@ -84,22 +96,23 @@
     <section>
       <h2>Children</h2>
       <p>PitchClip is made for parents and coaches, not for children to use on their own. Because it films youth baseball, clips show children, and parents can type players' names and pick a player photo.</p>
-      <p>That information stays on the parent's iPhone. The developer does not collect, receive or store personal information about children through the app: there are no accounts, ads, analytics or tracking, and nothing goes to a server. A child's name or video reaches someone else only when a parent shares a clip, uses Live view, or sends feedback or a bug report.</p>
+      <p>That information stays on the parent's iPhone unless the parent chooses to send it. There are no accounts, ads, analytics or tracking. A child's name or video reaches someone else only when a parent shares a clip, uses Live view, sends feedback or a bug report, or uses Coach. When a parent taps Coach, a short piece of the child's video, the jersey number and age (never a name) go to PitchClip's server, which uses Anthropic's Claude to write the card, as described under Coach. The server deletes the video piece as soon as the review finishes.</p>
       <p>PitchClip is intended for adults, and the developer does not knowingly collect personal information from children under 13. If a child's information reaches the developer in feedback or a bug report, it is used only to fix the problem and is deleted on request. Parents can contact the developer at any time about their child's information.</p>
-      <p>Please think of other families when you share: clips can show other players, and Live view shows the lineup to nearby PitchClip phones.</p>
+      <p>Please think of other families when you share: clips can show other players, Live view shows the lineup to nearby PitchClip phones, and a Coach video piece can show other players and the umpire.</p>
     </section>
 
     <section>
       <h2>Permissions</h2>
-      <p>Camera and microphone: to film pitches with game sound, and for nothing else. Photos: to save clips you choose and, if you allow it, to read your newest screenshot for a lineup and to check that a moved clip arrived. Picking a player photo or one screenshot needs no Photos permission, because PitchClip sees only the picture you pick. The player photo is saved without its location or camera details. Local network: to find nearby phones for Live view. Notifications: alerts made on this phone, such as when recording stops. You can change each permission in the iPhone Settings app. PitchClip does not use your location.</p>
+      <p>Camera and microphone: to film pitches with game sound, and for nothing else. Photos: to save clips you choose and, if you allow it, to read your newest screenshot for a lineup and to check that a moved clip arrived. Picking a player photo or one screenshot needs no Photos permission, because PitchClip sees only the picture you pick. The player photo is saved without its location or camera details. Local network: to find nearby phones for Live view. Notifications: alerts made on this phone, such as when recording stops or a Coach card is ready. You can change each permission in the iPhone Settings app. PitchClip does not use your location.</p>
     </section>
 
     <section>
       <h2>Deleting your data</h2>
       <p>A deleted clip stays in Recently deleted for 7 days, then goes away on its own. To remove it sooner, open Settings, Storage and empty Recently deleted.</p>
-      <p>Settings, Delete all clips on this phone removes every clip and empties Recently deleted. Pitch counts, the team list, the player photo, settings and the log stay until you delete the app.</p>
+      <p>Settings, Delete all clips on this phone removes every clip and empties Recently deleted. Pitch counts, the team list, the player photo, Coach cards, settings and the log stay until you delete the app.</p>
       <p>Remove the player photo in Settings, Player. Remove a player from your team list in Settings, My team, by swiping the player.</p>
       <p>Deleting PitchClip removes everything it stored on this iPhone. Copies in an iPhone backup stay until that backup is replaced or deleted. Clips you saved to Photos or shared, and clips copied to other phones in Live view, stay where they are. To have the developer delete anything you emailed, write to the address below.</p>
+      <p>Coach keeps no video after a review: the server deletes each video piece as soon as the review finishes, and its log lines hold no video and no names.</p>
     </section>
 
     <section>
